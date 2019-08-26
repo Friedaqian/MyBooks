@@ -1,0 +1,26 @@
+<form [formGroup]="bookForm" (ngSubmit) ="createBook()">
+    <!-- <label>
+        ID:
+        <input type="text" formControlName="id">
+    </label> -->
+
+    <label>
+        Title:
+        <input type="text" formControlName="title">
+    </label><br>
+
+    <label>
+        Price:
+    <input type="text" formControlName="price">
+    </label><br>
+    <label>
+        Publisched
+        <input type="text" formControlName = "published">
+    </label><br>
+    <label>
+        imgUrl:
+        <input type="text" formControlName="imgUrl" [(ngModel)] = "twoWayImgUrl">
+    </label>
+
+    <button type="submit">Submit</button>
+</form>

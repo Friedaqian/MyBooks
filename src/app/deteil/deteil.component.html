@@ -1,0 +1,17 @@
+<div *ngIf="book">
+    <h1 style="color: brown; font-family:'Times New Roman', Times, serif">Detail of Book</h1>
+<div>
+  <div><img src="{{book.imgUrl}}" alt="Place picture"></div>
+    
+     <ul>
+       
+       <li>{{book.title}}</li>
+       <li>{{book.price}}</li>
+       <li>{{book.published |date:'yyyy-MM-dd'}}</li>
+       <li>{{book.autor.firstname}} {{book.autor.lastname}}</li> 
+       
+     </ul>
+   
+  
+   </div>      
+</div>
